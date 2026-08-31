@@ -1,6 +1,6 @@
 ---
 title: "Ethan Present"
-image: "herzl.jpg"
+image: "turtles.jpg"
 color1: "#5A59A3"
 color2: "#C66060"
 angle: 130
@@ -11,12 +11,14 @@ output:
   postcards::onofre
 ---
  
-György Herzl is a filmmaker and computational storyteller based in Leipzig,
-Germany. Their work has been featured at the Festival do Rio, Internationale
-Filmfestspiele Berlin, Kunsthalle Basel, and the New Museum of Contemporary Art
-in New York City. "ГУМ" is their latest project which examines the rise of
-consumerism in post-Soviet republics.
+My name is Ethan Present. I am a senior computer science major from Houston, Texas. I enjoy hiking, playing board/card games, and spending time with friends. I visited New York last summer, hiked in a park, and took the photo above during my visit. It reminded me of Turtle Pond here on campus.
 
+Here is a list of a few of my favorite movies in no particular order: 
+
+- Guardians of the Galaxy (any of them)
+- Star Wars: Revenge of the Sith
+- Central Intelligence 
+- Transformers (any of them)
 
 <!-- BELOW THIS SECTION IS HTML CODE. -->
 <!-- It creates a footer with the time stamp in a nice format --> 
@@ -25,22 +27,27 @@ The website was built at: `r format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z")`
 </div>
 
 <style>
-/* This targets the container holding the template content and adds space at the bottom */
-.container {
-  padding-bottom: 80px !important; 
+/* Forces the layout to be a flex container that pushes the footer to the bottom of the page content */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
-/* This forces the footer to stick to the absolute bottom with a transparent background */
+.container {
+  flex: 1; /* Pushes the footer down naturally if content is short */
+  padding-bottom: 40px !important; 
+}
+
+/* The footer is now part of the natural page flow, so it won't overlap text on small screens */
 .custom-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  position: relative;
   width: 100%;
-  background-color: transparent; /* Makes the background match the rest of the page */
+  background-color: transparent; 
   text-align: center;
-  padding: 15px 0;
+  padding: 20px 0;
   font-size: 0.8rem;
   color: #FFF;
-  z-index: 9999; /* Ensures it stays on top of any overlapping layout pieces */
 }
 </style>
