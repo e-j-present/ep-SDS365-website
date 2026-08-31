@@ -1,0 +1,46 @@
+---
+title: "Ethan Present"
+image: "herzl.jpg"
+color1: "#5A59A3"
+color2: "#C66060"
+angle: 130
+links:
+  - label: GitHub
+    url: "https://github.com/e-j-present"
+output:
+  postcards::onofre
+---
+ 
+György Herzl is a filmmaker and computational storyteller based in Leipzig,
+Germany. Their work has been featured at the Festival do Rio, Internationale
+Filmfestspiele Berlin, Kunsthalle Basel, and the New Museum of Contemporary Art
+in New York City. "ГУМ" is their latest project which examines the rise of
+consumerism in post-Soviet republics.
+
+
+<!-- BELOW THIS SECTION IS HTML CODE. -->
+<!-- It creates a footer with the time stamp in a nice format --> 
+<div class="custom-footer">
+The website was built at: `r format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z")`
+</div>
+
+<style>
+/* This targets the container holding the template content and adds space at the bottom */
+.container {
+  padding-bottom: 80px !important; 
+}
+
+/* This forces the footer to stick to the absolute bottom with a transparent background */
+.custom-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent; /* Makes the background match the rest of the page */
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.8rem;
+  color: #FFF;
+  z-index: 9999; /* Ensures it stays on top of any overlapping layout pieces */
+}
+</style>
